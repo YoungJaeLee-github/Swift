@@ -11,3 +11,10 @@
 
 <pre> ex) var someFloat : Float = 3 은 가능 </pre>
 <pre> ex) var someInt : Int = 3, someFloat = someInt 는 불가능 </pre>
+
+<pre> 1. var someInt : Int = 3.0 불가능 
+      2. var someFloat : Float = 3 가능
+      3. var someDouble : Double = 3 가능
+      4. var someString : String = "A" 가능
+</pre>
+    
