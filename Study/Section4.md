@@ -8,7 +8,8 @@
 var someAny : Any = 100
 someAny = “어떤 타입도 수용 가능함”
 someAny = 123.12
-let someDouble : Double = someAny 불가능
+
+// let someDouble : Double = someAny 불가능
 </pre>
 
 ### AnyObject
@@ -19,7 +20,7 @@ let someDouble : Double = someAny 불가능
 class SomeClass { }
 var someAnyObject : AnyObject = SomeClass()
 
-someAnyObject = 123.12 불가능
+// someAnyObject = 123.12 불가능
 </pre>
 
 ### nil
@@ -27,6 +28,6 @@ someAnyObject = 123.12 불가능
 * Java의 null과 유사
 
 <pre>
-someAny = nil 불가능(어떤 타입도 수용할 수 있지만 빈 값은 수용할 수 없음)
-someAnyObject = nil 불가능
+// someAny = nil 불가능(어떤 타입도 수용할 수 있지만 빈 값은 수용할 수 없음)
+// someAnyObject = nil 불가능
 </pre>
