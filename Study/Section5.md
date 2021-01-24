@@ -5,7 +5,7 @@
 * 순서(index)가 있는 리스트 컬렉션
 * 선언 방법은 다양함
 <pre>
-	var integers : Array<Int> = Array<Int>()
+	var integers : Array< Int > = Array< Int >()
 
 	// Array에 원소를 뒤에 삽입
 	integers.append(1) 
@@ -37,7 +37,7 @@
 ### Dictionary
 * 키와 값의 쌍으로 이루어진 컬렉션
 <pre>
-	var anyDictionary : Dictionary<String, Any> = [String : Any]()
+	var anyDictionary : Dictionary< String, Any > = [String : Any]()
 	anyDictionary[“someKey”] = “value”
 	anyDictionary[“anotherKey”] = 100
 	
@@ -57,7 +57,7 @@
 * 순서가 없고, 멤버가 유일한 컬렉션(중복이 없음)
 * 축약 선언 방법이 없음
 <pre>
-	var integerSet : Set<Int> = Set<Int>()
+	var integerSet : Set< Int > = Set< Int >()
 	// Set에 원소를 삽입 할 때 사용
 	integerSet.insert(1)
 	integerSet.insert(100)
@@ -75,8 +75,8 @@
 	integerSet.count // Set의 원소의 개수 
 
 	// Set 응용
-	let setA : Set<Int> = [1, 2, 3, 4, 5]
-	let setB : Set<Int> = [3, 4, 5, 6, 7]
+	let setA : Set< Int > = [1, 2, 3, 4, 5]
+	let setB : Set< Int > = [3, 4, 5, 6, 7]
 
 	let union : Set<Int> = setA.union(setB)
 	let sortedUnion : [Int] = union.sorted()
