@@ -29,7 +29,7 @@
 	// 빈 Character Array 생성
 	var characters : [Character] = []
 	// let을 사용하여 Array를 선언하면 불변 Array
-	var immutableArray = [1, 2, 3]
+	let immutableArray = [1, 2, 3]
 	// immutableArray.append(4) let 이기 때문에 불가능
 	// immutableArray.removeAll() 불가능
 </pre>
