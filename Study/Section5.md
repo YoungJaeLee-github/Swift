@@ -82,8 +82,8 @@
 	let setA : Set< Int > = [1, 2, 3, 4, 5]
 	let setB : Set< Int > = [3, 4, 5, 6, 7]
 
-	let union : Set<Int> = setA.union(setB)
+	let union : Set< Int > = setA.union(setB)
 	let sortedUnion : [Int] = union.sorted()
-	let intersection : Set<Int> = setA.intersection(setB)
-	let subtracting : Set<Int> = setA.subtracting(setB) 
+	let intersection : Set< Int > = setA.intersection(setB)
+	let subtracting : Set< Int > = setA.subtracting(setB) 
 </pre>
