@@ -22,12 +22,16 @@
 	integers.count // 원소의 개수
 
 	// 다양한 Array 선언 방법 
+	
 	// 빈 Double Array 생성
 	var doubles : Array<Double> = [Double]()
+	
 	// 빈 String Array 생성
 	var strings : [String] = [String]()
+	
 	// 빈 Character Array 생성
 	var characters : [Character] = []
+	
 	// let을 사용하여 Array를 선언하면 불변 Array
 	let immutableArray = [1, 2, 3]
 	// immutableArray.append(4) let 이기 때문에 불가능
