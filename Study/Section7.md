@@ -59,7 +59,7 @@
 		return “Hello \(friends)! I’m\(me)!”
 	}
 
-	print(sayHelloToFriends(me: “youngjae”, friends: “hana, “eric”, “wing”))
+	print(sayHelloToFriends(me: “youngjae”, friends: “hana", “eric”, “wing”))
 	// Hello ["hana”, “eric”, “wing”]! I’m youngjae!
 
 	print(sayHelloToFriends(me: “youngjae”))
