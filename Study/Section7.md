@@ -95,6 +95,7 @@
 	// someFunction = sayHelloToFriends(me: friends:) //타입이 다른 함수는 할당 할 수 없음
 </pre>
 
+* 매개변수를 통해 전달할 수 있음
 <pre>
 	func runAnother(function: (String, String) -> Void) {
 		function(“Jenny”, “Mike”)
