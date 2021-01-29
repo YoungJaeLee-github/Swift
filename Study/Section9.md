@@ -8,9 +8,10 @@
 </pre>
 
 <pre>
-	var integers : Array<Int> = Array<Int>()
+	var integers : Array< Int > = Array< Int >()
 	integers = [1, 2, 3]
-	let people : Dictionary<String, Int>() = Dictionary<String, Int>()
+	var people : Dictionary< String, Int > = Dictionary< String, Int >()
+	people = ["youngjae" : 10, "eric" : 20, "mike" : 15]
 
 	for integer in integers {
 		print(integer)
