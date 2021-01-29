@@ -1,1 +1,1 @@
-![ezgif com-gif-maker]https://user-images.githubusercontent.com/77099686/106281384-8285a800-6282-11eb-9977-74ccde6fff8a.gif
+![화면-기록-2021-01-29-오후-10 25 40](https://user-images.githubusercontent.com/77099686/106281691-e8722f80-6282-11eb-983e-bd89daf814ea.gif)
