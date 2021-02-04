@@ -10,7 +10,7 @@
 
 <pre>
 	// someOptionalParam can be nil
-	func someFunction(someOptionalPara: Int?) {
+	func someFunction(someOptionalParam: Int?) {
 		// insert code
 	}
 
