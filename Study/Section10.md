@@ -53,11 +53,11 @@
 			print(“Value is \(value)”)
 	}
 
-	// 암시적 추출 옵셔널 일반 변수 처럼 사용
+	// 암시적 추출 옵셔널 일반 변수 처럼 사용, type은 optional.
 	optionalValue = optionalValue + 1
 	// nil 할당 가능
 	optionalValue = nil
-	// nil을 할당 함으로써 잘못된 접근으로 인한 런타임 오류 발생
+	// nil을 할당 함으로써 잘못된 접근으로 인한 런타임 오류 발생, 다시 다른 값을 할당 할 수는 있지만 연산은 불가능
 	optionalValue = optionalValue + 1
 </pre>
 
