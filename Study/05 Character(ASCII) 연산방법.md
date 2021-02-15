@@ -2,7 +2,6 @@
 
 <pre>
   let someCharacter: Character = "A"
-  let someInt: Int = 5
   if let ascii = someCharacter.asciiValue {
     let someInt: Int = 5
     let newCharacter: Character = Character(UnicodeScalar(ascii + UInt8(someInt)))
