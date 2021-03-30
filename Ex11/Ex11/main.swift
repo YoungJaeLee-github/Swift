@@ -28,7 +28,7 @@ var yourName: String? = nil
 
 if let name = myName2, let friend = yourName {
     print("\(name) and \(friend)")
-}
+} // yourName이 nil이므로 옵셔널 바인딩 구문이 실행되지 않음.
 
 yourName = "hana"
 if let name = myName2, let friend = yourName {
