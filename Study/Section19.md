@@ -98,5 +98,6 @@
 		didSet {
 			print(“\(oldValue)에서 \(someValue)로 변경되었습니다.”)
 		}
+	}
 		someValue = 200
 </pre>
