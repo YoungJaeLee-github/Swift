@@ -112,6 +112,14 @@
 * 컨테이너 정렬 후 정렬 된 새로운 컨테이너로 반환
 <pre>
 	let someArray: Array<Int> = [3, 2, 1]
-	var sortedArray: Arrat<Int> = someArray.sorted() { $0 < $1 }
+	var sortedArray: Arrat<Int> = someArray.sorted { $0 < $1 }
 	print(sortedArray)	// [1, 2, 3]
+</pre>
+
+### sort
+* 컨테이너 데이터를 정렬함, sorted와 다르게 새로운 컨테이너로 반환하지 않음
+<pre>
+	let someArray: Array<Int> = [3, 2, 1]
+	someArray.sort { $0 < $1 }
+	print(someArray)	// [1, 2, 3]
 </pre>
