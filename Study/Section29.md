@@ -28,7 +28,7 @@
 
 ### 제네릭을 사용한 swapTwoValues(_: _:) 함수 
 <pre>
-	func swapTwoValues<T>(_ a: inout T, _ b: inout T) {
+	func swapTwoValues<타입>(_ a: inout T, _ b: inout T) {
 		let temporaryA: T = a
 		a = b
 		b = temporaryA
@@ -52,23 +52,27 @@
 
 ### 제네릭을 사용하지 않은 IntStack 구조체 타입
 <pre>
-	var items = [Int]()
-	mutating func push(_ item: Int) {
-		items.append(item)
-	}
-	mutating func pop() -> Int {
-		return items.removeLast()
+	struct IntStack {
+		var items = [Int]()
+		mutating func push(_ item: Int) {
+			items.append(item)
+		}
+		mutating func pop() -> Int {
+			return items.removeLast()
+		}
 	}
 </pre>
 
 ### 제네릭을 사용한 Stack 구조체 타입
 <pre>
-	var items = [Element]()
-	mutating func push(_ item: Element) {
-		items.append(item)
-	}
-	mutating func pop() -> Element {
-		return items.removeLast()
+	struct Stack<타입> {	
+		var items = [Element]()
+		mutating func push(_ item: Element) {
+			items.append(item)
+		}
+		mutating func pop() -> Element {
+			return items.removeLast()
+		}
 	}
 </pre>
 
@@ -78,23 +82,16 @@
 * 타입 제약은 타입 매개변수가 가져야 할 제약사항을 지정할 수 있는 방법
 * 가령, 타입 매개변수 자리에 사용할 실제 타입이 특정 클래스를 상속 받은 타입이어야 한다든지, 특정 프로토콜을 준수하는 타입이어야 한다는 등의 제약을 줄 수 있음
 * 타입 제약은 <b>클래스 타입</b> 또는 <b>프로토콜</b>로만 줄 수 있음
-<pre>
-	public struct Dictionary<Key : Hashable, Value> : Collection, ExpressibleByDictionaryLiteral { /* … */ }
-</pre>
+* 가령, public struct Dictionary<Key : Hashable, Value> : Collection, ExpressibleByDictionaryLiteral { /* … */ }
 * Key 타입 매개변수는 Hashable 프로토콜을 준수하는 타입만 사용 가능 함
 
 ### 제네릭을 사용한 뺄셈 함수의 잘못된 구현
 <pre>
-	func substractTwoValue<T>(_ a: T, _ b: T) -> T {
+	func substractTwoValue<타입>(_ a: T, _ b: T) -> T {
 		return a - b
 	}
 </pre>
-* 뺄셈 연산이 가능한 타입이어야만 가능 함
-<pre>
-	func substractTwoValue<T : BinaryInteger>(_ a: T, _ b: T) -> T {
-		return a - b
-	}
-</pre>
+* 뺄셈 연산이 가능한 타입이어야만 가능 함 -> 타입 제약을 명시해주면 됨.
 
 ### 프로토콜의 연관 타입(Associated Type)
 * 프로토콜을 정의할 때 연관타입을 함께 정의하면 유용할 때가 있음
