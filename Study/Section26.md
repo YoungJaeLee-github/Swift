@@ -85,7 +85,7 @@
 
 ### 프로토콜 지향 프로그래밍, 프로토콜 초기 구현
 * POP(protocol oriented programming), 프로토콜 지향 프로그래밍 에서는 프로토콜과 익스텐션을 통해 중복된 코드를 피하고
-* 기능 모듈화를 보다 효율적이게 할 수 있
+* 기능 모듈화를 보다 효율적이게 할 수 있음
 <pre>
 	protocol Talkable {
 		var topic: String { get set }
