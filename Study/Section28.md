@@ -112,7 +112,7 @@
 * 컨테이너 정렬 후 정렬 된 새로운 컨테이너로 반환
 <pre>
 	let someArray: Array<Int> = [3, 2, 1]
-	var sortedArray: Arrat<Int> = someArray.sorted { $0 < $1 }
+	var sortedArray: Array<Int> = someArray.sorted { $0 < $1 }
 	print(sortedArray)	// [1, 2, 3]
 </pre>
 
